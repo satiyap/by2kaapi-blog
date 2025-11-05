@@ -1,3 +1,18 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "/"
+title   = "by2kaapi"
+languageCode = "en-us"
+
+# Enable relative and canonical URLs
+relativeURLs = true
+canonifyURLs = true
+
+# Use module imports instead of 'theme = "..."'
+[module]
+  [[module.imports]]
+    path = "github.com/satiyap/kaapi"
+
+# Archie basic params (add more later)
+[params]
+  mode = "auto"                # auto dark/light
+  useCDN = false
+  favicon = ""                 # you can set a PNG URL later

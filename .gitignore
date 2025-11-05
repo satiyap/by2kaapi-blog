@@ -1,2 +1,35 @@
-public/
-resources/
+# Hugo build output
+/public/
+/resources/_gen/
+/hugo_stats.json
+.hugo_build.lock
+
+# Local Hugo cache
+/.hugo_build.lock
+/.hugo_cache/
+.cache/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Node/Go cache (if ever used later)
+node_modules/
+_vendor/
+vendor/
+dist/
+*.log
+
+# Hugo Module vendor directory (optional)
+# Uncomment this if you *don’t* want to version the vendored modules
+# _vendor/
+
+# IDE/editor stuff
+.idea/
+.vscode/
+*.swp
+
+# Deployment artifacts
+.env
+*.bak
+*.tmp
