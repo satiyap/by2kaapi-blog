@@ -10,4 +10,4 @@ A simple test message to get stuff going. This should appear in H2 and rest of t
 
 For now working with Archie theme, added as hugo module vs adding a git submodule. Both are very interesting approaches
 
-The automatic push trigger should work and this site should be seamlessly updated.
+The automatic push trigger should work and this site should be seamlessly updated!
