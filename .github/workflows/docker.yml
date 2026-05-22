@@ -23,6 +23,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Compute sortable tag
+        id: tag
+        run: |
+          echo "value=main-$(date -u +%s)-$(git rev-parse --short=7 HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
@@ -32,5 +37,6 @@ jobs:
           tags: |
             ghcr.io/satiyap/by2kaapi-blog:latest
             ghcr.io/satiyap/by2kaapi-blog:${{ github.sha }}
+            ghcr.io/satiyap/by2kaapi-blog:${{ steps.tag.outputs.value }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
