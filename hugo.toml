@@ -1,6 +1,6 @@
 baseURL = "/"
 title   = "by2kaapi"
-languageCode = "en-us"
+locale = "en-us"
 
 # Enable relative and canonical URLs
 relativeURLs = true
