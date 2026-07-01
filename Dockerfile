@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM hugomods/hugo:exts AS build
+FROM hugomods/hugo:0.163.3 AS build
 WORKDIR /site
 COPY . /site
 RUN hugo mod tidy && hugo mod vendor
